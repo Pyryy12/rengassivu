@@ -1,0 +1,523 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1 {
+    font-size: 24px; 
+}
+
+h2 {
+    font-size: 18px;
+}
+
+h3 {
+    font-size: 16px; 
+}
+
+p {
+    font-size: 14px; 
+}
+
+.tausta {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                      url("kristaps-grundsteins-phv0kzqMJyk-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+}
+
+.mainos1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                      url("tekton-O_ufcLVTAYw-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+}
+
+.mainos2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                      url("tekton-UuO9Jdu2d7E-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+}
+
+
+header {
+    background-color: #012326; 
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+header .logo img {
+    height: 250px;
+    width: 250px;
+    padding: 0 10%;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 70px;
+    padding: 0 100px;
+}
+
+header nav ul li {
+    margin: 0;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 24px;
+    transition: color 0.3s;
+    margin-right: 20%;
+}
+
+a:hover {
+    color: #f205b3;
+}
+header nav ul li a:hover {
+    color: #f205b3; 
+}
+
+.component {
+    position: relative;
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.component .laadukkaat-kes-talvi {
+    font-family: "Inter-Bold", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    color: white;
+    font-size: 46px;
+    margin-bottom: 20px;
+}
+
+.component .katso-tarjoukset {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.component .overlap-group {
+    background-color: #f205b3;
+    border-radius: 58px;
+    padding: 15px 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 25px;
+}
+
+.component .overlap-group:hover {
+    background-color: #c10491;
+}
+
+.component .text-wrapper {
+    font-family: "Inter-SemiBold", Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+}
+
+
+
+.mainos-text {
+    font-family: "Inter-Bold", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    color: white;
+    font-size: 46px;
+    margin-top: 0;
+}
+
+.search {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    width: 90%;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.search h2 {
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.search form {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.search input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search button {
+    padding: 10px 20px;
+    background-color: #012326;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.search button:hover {
+    background-color: #555;
+}
+
+
+.results {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    width: 90%;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.results h2 {
+    margin-bottom: 20px;
+}
+
+.results table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.results table th, .results table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.results table th {
+    background-color: #012326;
+    color: #fff;
+}
+
+.results table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.video {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    width: 90%;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+iframe {
+    width: 100%;
+    height: 500px;
+    border: none;
+    border-radius: 10px;
+}
+
+
+footer {
+    background-color: #012326;
+    color: #fff;
+    justify-content: space-evenly;
+    padding: 20px 100px;
+    margin-top: 20px;
+    display: flex;
+    height: 200px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: flex-start;
+    
+    width: 50%;
+    align-items: center;
+}
+
+.footer-kartta {
+    max-width: 300px;
+    width: 40%;
+    height: 100%;
+    background-image: url("MUSTATrenkaat_Karttakuva.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+        overflow-x: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    * {
+        box-sizing: border-box; 
+    }
+
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+        width: 100%;
+    }
+
+    header .logo img {
+        height: 150px;
+        width: 150px;
+        margin: 0 auto;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+        padding: 0;
+        width: 100%; 
+    }
+
+    header nav ul li a {
+        font-size: 18px;
+        margin-right: 0;
+    }
+
+    .component {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .component .laadukkaat-kes-talvi {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .component .katso-tarjoukset {
+        margin-top: 10px;
+    }
+
+    .component .overlap-group {
+        padding: 10px 20px;
+    }
+
+    .component .text-wrapper {
+        font-size: 16px;
+    }
+
+    
+    .tausta {
+        height: 50vh;
+        background-size: cover; 
+    }
+
+
+    .search {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .search h2 {
+        font-size: 18px;
+    }
+
+    .search form {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .search input[type="text"] {
+        width: 100%;
+    }
+
+    .search button {
+        width: 100%;
+    }
+
+    .results {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .results table {
+        font-size: 12px;
+    }
+
+    .results table th, .results table td {
+        padding: 5px;
+    }
+
+    .video {
+        width: 100%;
+        padding: 15px;
+    }
+
+    iframe {
+        width: 100%; 
+        height: 300px;
+    }
+
+    footer {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .footer-container {
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .footer-kartta {
+        width: 100%;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+    .mainos1 {
+        width: 375px;
+    }
+    .mainos2 {
+        width: 375px;
+    }
+    .mainos-text {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 1366px) and (min-width: 1024px) {
+    body {
+        font-size: 16px;
+        overflow-x: hidden;
+    }
+
+    header {
+        flex-direction: row;
+        height: auto;
+        padding: 20px;
+    }
+
+    header .logo img {
+        height: 200px;
+        width: 200px;
+    }
+
+    header nav ul {
+        flex-direction: row;
+        gap: 30px;
+        padding: 0;
+    }
+
+    header nav ul li a {
+        font-size: 20px;
+    }
+
+    .component {
+        width: 80%;
+        padding: 20px;
+    }
+
+    .component .laadukkaat-kes-talvi {
+        font-size: 28px;
+    }
+
+    .component .katso-tarjoukset {
+        margin-top: 20px;
+    }
+
+    .component .overlap-group {
+        padding: 15px 30px;
+    }
+
+    .component .text-wrapper {
+        font-size: 18px;
+    }
+
+    .search {
+        width: 80%;
+        padding: 20px;
+    }
+
+    .search h2 {
+        font-size: 20px;
+    }
+
+    .results {
+        width: 80%;
+        padding: 20px;
+    }
+
+    .results table {
+        font-size: 14px;
+    }
+
+    .video {
+        width: 80%;
+        padding: 20px;
+    }
+
+    iframe {
+        height: 400px;
+    }
+
+    footer {
+        flex-direction: row;
+        padding: 30px;
+        text-align: left;
+    }
+
+    .footer-container {
+        width: 50%;
+    }
+
+    .footer-kartta {
+        width: 50%;
+        height: 100%;
+    }
+}
