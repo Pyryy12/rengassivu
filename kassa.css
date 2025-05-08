@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+body {
+    font-family: 'roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+p {
+    font-family: roboto;
+}
+
+.thank-you-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh; 
+    text-align: center;
+    margin-left: 20%;
+}
+
+.thank-you-message {
+    font-size: 50px;
+    color: #012326;
+    font-family: racing sans one;
+}
+
+header {
+    background-color: #012326;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    font-family: racing sans one;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+header .logo img {
+    height: 250px;
+    width: 250px;
+    padding: 0 10%;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 70px;
+    padding: 0 100px;
+}
+
+header nav ul li {
+    margin: 0;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    transition: color 0.3s;
+    margin-right: 20%;
+}
+
+a:hover {
+    color: #f205b3;
+}
+
+header nav ul li a:hover {
+    color: #f205b3;
+}
+
+.checkout {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 1200px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.checkout .form-container {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.checkout .form-container h3 {
+    font-family: 'racing sans one', sans-serif;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #012326;
+}
+
+.checkout .form-container form label {
+    font-family: roboto;
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.checkout .form-container form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.checkout .form-container form button {
+    padding: 10px 20px;
+    background-color: #012326;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.checkout .form-container form button:hover {
+    background-color: #f205b3;
+}
+
+.checkout .cart-container {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.checkout .cart-container h2 {
+    font-family: 'racing sans one', sans-serif;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #012326;
+}
+
+.checkout .cart-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.checkout .cart-container table th,
+.checkout .cart-container table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+    font-size: 14px;
+}
+
+.checkout .cart-container table th {
+    background-color: #012326;
+    color: #fff;
+}
+
+.checkout .cart-container table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.checkout .cart-container form button {
+    padding: 10px 20px;
+    background-color: #f205b3;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.checkout .cart-container form button:hover {
+    background-color: #c10491;
+}
