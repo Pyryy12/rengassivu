@@ -1,15 +1,16 @@
 <?php
+session_start();
+
 $servername = "localhost";
 $username = "root";
 $password = "";
 $dbname = "renkaat";
 
-
 $conn = new mysqli($servername, $username, $password, $dbname);
 
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
-}
+}   
 
 $searchResults = [];
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['search'])) {
@@ -23,6 +24,22 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['search'])) {
         }
     }
 }
+
+if (isset($_POST['add_to_cart'])) {
+    $item = [
+        'Merkki' => $_POST['Merkki'],
+        'Malli' => $_POST['Malli'],
+        'Tyyppi' => $_POST['Tyyppi'],
+        'Koko' => $_POST['Koko'],
+        'Hinta' => $_POST['Hinta']
+    ];
+    $_SESSION['cart'][] = $item;
+}
+
+if (isset($_POST['clear_cart'])) {
+    unset($_SESSION['cart']);
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -44,12 +61,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['search'])) {
                     <li><a href="index.php">Etusivu</a></li>
                     <li><a href="#footer">Yhteystiedot</a></li>
                     <li><a href="#renkaat">Renkaat</a></li>
+                    <li><a href="checkout.php">Kori (<?php echo isset($_SESSION['cart']) ? count($_SESSION['cart']) : 0; ?>)</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-
-    
 
     <div class="tausta">
         <div class="component">
@@ -99,7 +115,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['search'])) {
                         <th>Tyyppi</th>
                         <th>Koko</th>
                         <th>Hinta</th>
-                        <th>Saldo</th>
+                        <th>Osta</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -110,7 +126,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['search'])) {
                             <td><?php echo htmlspecialchars($row['Tyyppi']); ?></td>
                             <td><?php echo htmlspecialchars($row['Koko']); ?></td>
                             <td><?php echo htmlspecialchars($row['Hinta']); ?> €</td>
-                            <td><?php echo htmlspecialchars($row['Saldo']); ?></td>
+                            <td>
+
+                                <form method="POST" action="">
+                                    <input type="hidden" name="Merkki" value="<?php echo htmlspecialchars($row['Merkki']); ?>">
+                                    <input type="hidden" name="Malli" value="<?php echo htmlspecialchars($row['Malli']); ?>">
+                                    <input type="hidden" name="Tyyppi" value="<?php echo htmlspecialchars($row['Tyyppi']); ?>">
+                                    <input type="hidden" name="Koko" value="<?php echo htmlspecialchars($row['Koko']); ?>">
+                                    <input type="hidden" name="Hinta" value="<?php echo htmlspecialchars($row['Hinta']); ?>">
+                                    <button class="lisää_koriin" type="submit" name="add_to_cart">Lisää koriin</button>
+
+                                </form>
+                            </td>
                         </tr>
                     <?php endforeach; ?>
                 </tbody>
