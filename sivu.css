@@ -1,11 +1,10 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 body {
-    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
+    font-family: 'Roboto', sans-serif;
 }
 
 h1 {
@@ -46,6 +45,7 @@ p {
     justify-content: center;
     align-items: center;
     background-color: #000;
+    font-family: 'racing sans one', sans-serif;
 }
 
 .mainos2 {
@@ -58,6 +58,7 @@ p {
     justify-content: center;
     align-items: center;
     background-color: #000;
+    font-family: 'racing sans one', sans-serif;
 }
 
 
@@ -69,6 +70,7 @@ header {
     justify-content: space-between;
     align-items: center;
     height: 100px;
+    font-family: 'racing sans one', sans-serif;
 }
 
 .header-container {
@@ -88,7 +90,6 @@ header nav ul {
     list-style: none;
     display: flex;
     gap: 70px;
-    padding: 0 100px;
 }
 
 header nav ul li {
@@ -98,10 +99,10 @@ header nav ul li {
 header nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-weight: bold;
     font-size: 24px;
     transition: color 0.3s;
     margin-right: 20%;
+    font-family: 'racing sans one', sans-serif;
 }
 
 a:hover {
@@ -120,11 +121,11 @@ header nav ul li a:hover {
 }
 
 .component .laadukkaat-kes-talvi {
-    font-family: "Inter-Bold", Helvetica, Arial, sans-serif;
-    font-weight: 700;
+    font-weight: 400;
     color: white;
     font-size: 46px;
     margin-bottom: 20px;
+    font-family: 'racing sans one', sans-serif;
 }
 
 .component .katso-tarjoukset {
@@ -147,18 +148,14 @@ header nav ul li a:hover {
 }
 
 .component .text-wrapper {
-    font-family: "Inter-SemiBold", Helvetica, Arial, sans-serif;
     font-weight: 600;
     color: #fff;
     font-size: 18px;
     text-align: center;
+    
 }
 
-
-
 .mainos-text {
-    font-family: "Inter-Bold", Helvetica, Arial, sans-serif;
-    font-weight: 700;
     color: white;
     font-size: 46px;
     margin-top: 0;
@@ -177,6 +174,7 @@ header nav ul li a:hover {
 .search h2 {
     margin-bottom: 20px;
     display: flex;
+    font-family: 'racing sans one', sans-serif;
 }
 
 .search form {
@@ -204,9 +202,8 @@ header nav ul li a:hover {
 }
 
 .search button:hover {
-    background-color: #555;
+    background-color: #f205b3;
 }
-
 
 .results {
     background-color: #fff;
@@ -219,6 +216,7 @@ header nav ul li a:hover {
 
 .results h2 {
     margin-bottom: 20px;
+    font-family: 'racing sans one', sans-serif;
 }
 
 .results table {
@@ -241,6 +239,21 @@ header nav ul li a:hover {
     background-color: #f9f9f9;
 }
 
+button.lisää_koriin {
+    background-color: #012326;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 17px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.lisää_koriin:hover {
+    background-color: #f205b3;
+}
+
 .video {
     background-color: #fff;
     padding: 20px;
@@ -248,6 +261,7 @@ header nav ul li a:hover {
     width: 90%;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-family: racing sans one;
 }
 
 iframe {
@@ -284,7 +298,6 @@ footer {
     background-size: cover;
     background-position: center;
 }
-
 
 @media (max-width: 768px) {
     body {
