@@ -91,7 +91,7 @@ if (isset($_POST['clear_cart'])) {
     <div class="mainos2">
         <div class="component">
             <p class="mainos-text">
-                <br />Talven parhaat rengastarjoukset!
+                <br />Syksyn parhaat rengastarjoukset!
             </p>
         </div>
     </div>
