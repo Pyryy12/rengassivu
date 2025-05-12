@@ -434,10 +434,10 @@ footer {
         margin: 0 auto;
     }
     .mainos1 {
-        width: 375px;
+        width: 100%;
     }
     .mainos2 {
-        width: 375px;
+        width: 100%;
     }
     .mainos-text {
         font-size: 32px;
